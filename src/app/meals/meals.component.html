@@ -1,0 +1,54 @@
+<div class="home">
+<div class="container home-content">
+  <h1 class="slogan">Learn, Cook, Eat Your Food</h1>
+  <label for="tabs" class="d-none">select cat</label>
+  <select  id="tabs" class="d-block form-control d-md-none" #el (click)="getvalue()" >
+    <option value="Beef"  >Beef</option>
+    <option value="Breakfast">Breakfast</option>
+    <option value="Chicken" >Chicken</option>
+    <option value="Dessert">Dessert</option>
+    <option value="Goat" >Goat</option>
+    <option value="Lamb" >Lamb</option>
+    <option value="Miscellaneous" >Miscellaneous</option>
+    <option value="Pasta" >Pasta</option>
+    <option value="Pork" >Pork</option>
+    <option value="Seafood" >Seafood</option>
+    <option value="Side" >Side</option>
+    <option value="Starter" >Starter</option>
+    <option value="Vegan" >Vegan</option>
+    <option value="Vegetarian" >Vegetarian</option>
+  </select>
+  <ul class="mt-5 d-md-flex gap-4 d-none">
+    <li class="me-2"><a (click)="getAllmeals()">All</a></li>
+    <li class="me-2"><a (click)="getCategory('Beef')">Beef</a></li>
+    <li class="me-2"><a (click)="getCategory('Breakfast')">Breakfast</a></li>
+    <li class="me-2"><a (click)="getCategory('Chicken')">Chicken</a></li>
+    <li class="me-2"><a (click)="getCategory('Dessert')">Dessert</a></li>
+    <li class="me-2"><a (click)="getCategory('Goat')">Goat</a></li>
+    <li class="me-2"><a (click)="getCategory('Lamb')">Lamb</a></li>
+    <li class="me-2"><a (click)="getCategory('Miscellaneous')">Miscellaneous</a></li>
+    <li class="me-2"><a (click)="getCategory('Pasta')">Pasta</a></li>
+    <li class="me-2"><a (click)="getCategory('Pork')">Pork</a></li>
+    <li class="me-2"><a (click)="getCategory('Seafood')">Seafood</a></li>
+    <li class="me-2"><a (click)="getCategory('Side')">Side</a></li>
+    <li class="me-2"><a (click)="getCategory('Starter')">Starter</a></li>
+    <li class="me-2"><a (click)="getCategory('Vegan')">Vegan</a></li>
+    <li class="me-2"><a (click)="getCategory('Vegetarian')">Vegetarian</a></li>
+  </ul>
+  <div class="container p-4 meals">
+    <div class="row gy-5 gx-5">
+      @for(meal of meals; track $index){
+        <div class="col-md-6 col-lg-3 col-12 my-5">
+          <div class="meal text-center">
+            <img [src]="meal.strMealThumb" class="w-100" alt="">
+            <h3> {{meal.strMeal}} </h3>
+            <h4>  {{meal.strArea}} </h4>
+            <button>View Recipe</button>
+          </div>
+         </div>
+      }
+    </div>
+  </div>
+</div>
+
+</div>

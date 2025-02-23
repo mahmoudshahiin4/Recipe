@@ -1,0 +1,19 @@
+.nofound{
+  min-height: 100vh;
+  padding: 1rem;
+  margin-left: 16rem;
+  overflow: hidden;
+  .no{
+    padding: 2rem 1rem;
+
+    h2{
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      -webkit-transform: translate(-50%,-50%);
+      -moz-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+      -o-transform: translate(-50%,-50%);
+}
+  }
+}

@@ -1,0 +1,30 @@
+<div class="d-sm-block d-md-none d-lg-none position-absolute top-0 start-0 m-3" >
+  <button class="border-0 fs-2" (click)="openBar()" #el><i class="fa-solid fa-bars"></i></button>
+</div>
+
+<div class="bg-black bg-opacity-25 position-fixed start-0 end-0 top-0 bottom-0 d-none bg z-1" #bg (click)="closeBar()">
+  <nav class="d-sm-none d-md-block position-fixed top-0 start-0 vh-100 z-3" #hamada>
+    <div class="h-100 px-3 py-4 overflow-y-auto sidebar">
+      <div>
+        <img src="/images/logo-BfNap0Pe.png" class="w-100" alt="">
+        <ul class="mt-3">
+          <li class="shadow-lg "><a router-link=" ">meals</a></li>
+          <li><a href="">ingredients</a></li>
+          <li><a href="">area</a></li>
+        </ul>
+      </div>
+    </div>
+    </nav>
+</div>
+<nav class="d-none d-md-block position-fixed top-0 start-0 vh-100" #hamada>
+  <div class="h-100 px-3 py-4 overflow-y-auto sidebar">
+    <div>
+      <img src="/images/logo-BfNap0Pe.png" class="w-100" alt="">
+      <ul class="mt-3">
+        <li class="shadow-lg "><a router-link=" ">meals</a></li>
+        <li><a href="">ingredients</a></li>
+        <li><a href="">area</a></li>
+      </ul>
+    </div>
+  </div>
+  </nav>
